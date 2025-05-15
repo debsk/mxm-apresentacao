@@ -33,7 +33,7 @@ st.markdown(
 )
 
 # Header principal
-st.markdown("<h1 style='color:#002f6c;'>MXM Sistemas</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='color:white;'>MXM Sistemas</h1>", unsafe_allow_html=True)
 
 # Menu lateral
 menu = st.sidebar.radio("🔷 Navegue pela apresentação", [
