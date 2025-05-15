@@ -144,7 +144,7 @@ elif menu == "💼 Soluções e Colaboração":
     - 📦 **Pacote Office**  
     - 💬 **Microsoft Teams**  
     - 🗂️ **SAU (Sistema de Abertura de Chamados)**  
-    - 🗃️ **Bancos de Dados**: Oracle e Oracle/Amazon RDS
+    - 🗃️ **Bancos de Dados**: Oracle e Amazon RDS
 
     **Ferramentas de Colaboração:**
 
