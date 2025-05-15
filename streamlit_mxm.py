@@ -144,12 +144,12 @@ elif menu == "💼 Soluções e Colaboração":
     - 📦 **Pacote Office**  
     - 💬 **Microsoft Teams**  
     - 🗂️ **SAU (Sistema de Abertura de Chamados)**  
-    - 🗃️ **Bancos de Dados**: Oracle e MariaDB
+    - 🗃️ **Bancos de Dados**: Oracle e Oracle/Amazon RDS
 
     **Ferramentas de Colaboração:**
 
-    - Internamente: Slack, Microsoft Teams  
-    - Externamente: plataformas SaaS com acesso remoto seguro
+    - Internamente: Pacote Office, Microsoft Teams  
+    - Externamente: Plataformas SaaS com acesso remoto seguro
 
     Com essas tecnologias, a MXM promove **agilidade, inovação e conectividade contínua** com seus clientes.
     """)
@@ -248,11 +248,39 @@ elif menu == "📈 Forças de Porter e Benefícios":
 
     # Gráfico de Radar para análise das Forças de Porter
     st.subheader("Forças de Porter: Radar Competitivo")
+
     porter_data = pd.DataFrame({
         'Força': ['Rivalidade', 'Ameaça de Novos Entrantes', 'Ameaça de Substitutos', 'Poder dos Fornecedores', 'Poder dos Clientes'],
         'Intensidade': [8, 6, 5, 6, 9]
     })
-    fig = px.line_polar(porter_data, r='Intensidade', theta='Força', line_close=True, title='Análise de Porter')
+
+    fig = px.line_polar(
+        porter_data,
+        r='Intensidade',
+        theta='Força',
+        line_close=True,
+        title='Análise de Porter',
+        template='plotly'  # Tema mais legível
+    )
+
+    fig.update_traces(fill='toself', line_color='blue')
+
+    fig.update_layout(
+        polar=dict(
+            radialaxis=dict(
+                visible=True,
+                range=[0, 10],
+                tickfont=dict(color='white')
+            ),
+            angularaxis=dict(
+                tickfont=dict(color='white')
+            )
+        ),
+        font=dict(color='white'),
+        paper_bgcolor='rgba(0,0,0,0)',  # Fundo transparente
+        plot_bgcolor='rgba(0,0,0,0)'    # Fundo do gráfico também transparente
+    )
+
     st.plotly_chart(fig)
 
 elif menu == "📍 Localização":
