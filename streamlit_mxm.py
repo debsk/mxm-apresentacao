@@ -270,7 +270,7 @@ elif menu == "📈 Forças de Porter e Benefícios":
             radialaxis=dict(
                 visible=True,
                 range=[0, 10],
-                tickfont=dict(color='white')
+                tickfont=dict(color='black')
             ),
             angularaxis=dict(
                 tickfont=dict(color='white')
