@@ -24,7 +24,7 @@ Este projeto consiste em uma aplicação interativa feita com [Streamlit](https:
 
 Online (recomendado):
 O projeto está hospedado gratuitamente via Streamlit Cloud:  
-👉 [Acesse aqui](https://SEU-LINK.streamlit.app)
+👉 https://mxm-apresentacao-jhg2aotnt9xbqptnk2vmqe.streamlit.app
 
 Localmente:
 1. Clone o repositório:
