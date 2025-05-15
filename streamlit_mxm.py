@@ -158,7 +158,7 @@ elif menu == "💼 Soluções e Colaboração":
     st.subheader("Tecnologias Usadas")
     st.write("Clique nas opções abaixo para saber mais sobre cada tecnologia utilizada pela MXM:")
 
-    tecnologia = st.selectbox("Escolha uma tecnologia", ["Pacote Office", "Microsoft Teams", "SAU", "Oracle/MariaDB"])
+    tecnologia = st.selectbox("Escolha uma tecnologia", ["Pacote Office", "Microsoft Teams", "SAU", "Oracle/Amazon RDS"])
 
     if tecnologia == "Pacote Office":
         st.markdown("<h4><i class='fas fa-file-alt'></i> Pacote Office</h4>", unsafe_allow_html=True)
@@ -196,18 +196,20 @@ elif menu == "💼 Soluções e Colaboração":
         
         Esse sistema assegura a qualidade no atendimento e melhora a eficiência da resolução de problemas internos e externos.
         """)
-    elif tecnologia == "Oracle/MariaDB":
-        st.markdown("<h4><i class='fas fa-database'></i> Oracle/MariaDB</h4>", unsafe_allow_html=True)
-        st.write("""
-        O **Oracle** e o **MariaDB** são bancos de dados robustos utilizados pela MXM para garantir a integridade, segurança e escalabilidade dos dados armazenados.
-        Ambos são plataformas de gerenciamento de banco de dados relacional, essenciais para o funcionamento dos sistemas da empresa, como o ERP MXM-WebManager. Suas funcionalidades incluem:
-        
-        - **Armazenamento de Dados**: Esses bancos armazenam informações vitais sobre transações financeiras, estoque, clientes, fornecedores, etc.
-        - **Consultas Rápidas**: Permitem a realização de consultas complexas de dados de forma eficiente, essencial para a tomada de decisões rápidas e precisas.
-        - **Segurança e Backup**: Ambos os bancos oferecem soluções de segurança e backup para garantir a proteção dos dados e evitar perdas.
-        
-        A utilização desses bancos de dados garante que a MXM tenha uma infraestrutura robusta e confiável para suportar suas operações diárias e o crescimento escalável dos seus sistemas.
-        """)
+    elif tecnologia == "Oracle/Amazon RDS":
+      st.markdown("<h4><i class='fas fa-database'></i> Oracle/Amazon RDS</h4>", unsafe_allow_html=True)
+      st.write("""
+      O **Oracle** e o **Amazon RDS (Relational Database Service)** são bancos de dados robustos utilizados pela MXM para garantir a integridade, segurança e escalabilidade das informações.
+      Essas soluções de gerenciamento de banco de dados relacional sustentam os principais sistemas da empresa, como o ERP MXM-WebManager. Entre suas funcionalidades, destacam-se:
+      
+      - **Armazenamento de Dados**: Armazenam dados críticos como transações financeiras, controle de estoque, cadastros de clientes e fornecedores.
+      - **Performance de Consultas**: Permitem consultas eficientes e de alta performance, essenciais para relatórios e análises em tempo real.
+      - **Alta Disponibilidade e Backup**: Ambos oferecem soluções robustas de replicação, segurança e backup automatizado para garantir continuidade e proteção dos dados.
+      - **Linguagens Utilizadas**: Utilizam as linguagens **SQL** (Structured Query Language) e **PL/SQL** (Procedural Language/SQL, exclusiva do Oracle) para manipulação e programação dentro do banco de dados.
+
+      Com essa infraestrutura, a MXM assegura operações confiáveis, com alta disponibilidade e capacidade de crescimento escalável.
+      """)
+
 
 
 
